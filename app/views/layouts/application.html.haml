@@ -1,0 +1,54 @@
+!!!
+%html
+  %head
+    %title ConstructionCard
+    %meta{charset: 'UTF-8'}
+    %meta{content: 'IE=edge', 'http-equiv' => 'X-UA-Compatible'}
+    %meta{ content: 'width=device-width, initial-scale=1.0', name: 'viewport' }
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    %header.header
+      .container-fluid
+        .row
+          .col-xs-12
+            .row
+              .col-xs-9.col-sm-12
+                %img{ src: image_path('roof.png') }
+                .title
+                  %span.title-container
+                    %span.red-color
+                      ​ЗОЛОТЫЕ
+                    %span.dark-gray-color
+                      РУКИ
+                  .sub-title.color-14
+                    Вся суть в деталях
+          .col-xs-12
+            .row
+              .col-xs-12.relative
+                .contacts-container
+                  %span.text-center Выезжаем по звонку
+                  %span.bold.text-center +7 (495) 000 00 00
+                  %span.bold.text-center ОБРАЩАЙТЕСЬ,
+                  %span.text-center ​чтобы узнать примерную стоимость
+                .person
+                  %img{ src: image_path('person.png') }
+    %nav.page-nav
+      .container-fluid
+        .row
+          .col-xs-12
+    %main#main
+      .container-fluid
+        .row
+          .col-xs-12
+            = yield
+    %footer.footer
+      .container-fluid
+        .row
+          .col-xs-12
+            .socials
+              %img{ src: image_path('twitter.png') }
+              %img{ src: image_path('facebook.png') }
+            .footer-text
+              © 2023 «ЗОЛОТЫЕ РУКИ». Сайт создан на

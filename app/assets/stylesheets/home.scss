@@ -1,0 +1,43 @@
+img {
+  width: 100%;
+}
+.title {
+  .title-container {
+    font-size: 23px;
+    font-weight: bold;
+  }
+  padding: 0 3%;
+  .sub-title {
+    width: 100%;
+    border-top: 1px solid gray;
+    background-color: white;
+    border-bottom: 1px solid gray;
+  }
+}
+.contacts-container {
+  width: 185px;
+  padding: 10px;
+  background: red;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  span {
+    display: block;
+  }
+}
+
+.red-color {
+  color: #DD0000;
+}
+.color-14 {
+  color: #383838;;
+}
+.dark-gray-color {
+  color: #383838;
+}
+.relative {
+  position: relative;
+}
+.bold {
+  font-weight: bold;
+}

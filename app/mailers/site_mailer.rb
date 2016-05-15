@@ -1,6 +1,6 @@
 class SiteMailer < ActionMailer::Base
   def send_contact_email(contact_email)
     @contact_email = contact_email
-    mail(to: @contact_email.email, subject: @contact_email.topic, from: ENV['EMAIL'])
+    mail(to: ENV['EMAIL'], subject: @contact_email.topic, from: @contact_email.email)
   end
 end

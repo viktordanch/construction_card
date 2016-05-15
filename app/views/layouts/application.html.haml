@@ -10,6 +10,13 @@
     = csrf_meta_tags
   %body
     %header.header
+      .language-select
+        = link_to '/cz', title: 'choose cz' do
+          %img{ alt: 'CZ', src: image_path('CZ.png') }
+        = link_to '/en', title: 'choose en' do
+          %img{ alt: 'en', src: image_path('GB.png') }
+        = link_to '/ru', title: 'choose ru' do
+          %img{ alt: 'RU', src: image_path('RU.png') }
       .container-fluid
         .row
           .col-xs-12.col-md-6.top-header.relative

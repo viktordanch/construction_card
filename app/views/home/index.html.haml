@@ -101,15 +101,16 @@
           .col-xs-12.col-sm-7
             %h2.text-left.title-content
               НАПИШИТЕ НАМ
-            %form
+            = form_tag '/send_mail', remote: true do
+              .flash_message.hidden
               .form-group
-                %input.form-control{ type: 'text', placeholder: "Имя" }
+                = text_field_tag 'name', nil, class: 'form-control', type: 'text', placeholder: "Имя", required: true
               .form-group
-                %input.form-control{ type: 'email', placeholder: "Email" }
+                = email_field_tag 'email', nil, class: 'form-control', type: 'text', placeholder: "Email", required: true
               .form-group
-                %input.form-control{ type: 'text', placeholder: "Тема" }
+                = text_field_tag 'topic', nil, class: 'form-control', type: 'text', placeholder: "Тема", required: true
               .form-group
-                %textarea.form-control{ type: 'text', placeholder: "Сообщение" }
+                = text_area_tag 'message', nil, class: 'form-control', type: 'text', placeholder: "Сообщение", required: true
               .form-group.text-right
                 %button.btn{ type: 'submit' }
                   Отправить

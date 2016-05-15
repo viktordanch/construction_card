@@ -435,6 +435,14 @@ header .dropdown {
       -moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
       box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
     }
+    .flash_message {
+      transition: all .25s ease-in-out;
+      margin-bottom: 10px;
+      background: #3C763D;
+      padding: 5px;
+      border-radius: 5px;
+      color: #fff;
+    }
   }
   .city-name {
     margin: 0;

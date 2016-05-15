@@ -1,0 +1,7 @@
+$('form input, form textarea').val('');
+
+$('form .flash_message').html('Email sent').removeClass('hidden');
+
+setTimeout(function(){
+    $('form .flash_message').addClass('hidden').html('')
+}, 5000);

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get 'home/index'
-  post '/send_mail', to: 'home#send_mail'
+  get '/:locale', to: 'home#index'
+  get '/:locale/index', to: 'home#index'
+  post 'send_mail', to: 'home#send_mail'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
